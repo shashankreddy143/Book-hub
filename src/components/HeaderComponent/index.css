@@ -1,0 +1,142 @@
+.header-navbar {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.header-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.header-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-website-logo {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+.mobile-hamburger-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #334155;
+  padding: 8px;
+}
+
+.desktop-nav-menu {
+  display: none;
+  list-style-type: none;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748B;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #0284C7;
+}
+
+.active-nav-link {
+  color: #0284C7 !important;
+  font-weight: 700;
+}
+
+.logout-desktop-button {
+  background-color: #0284C7;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.logout-desktop-button:hover {
+  background-color: #0369A1;
+}
+
+/* Mobile Drawer */
+.mobile-nav-drawer {
+  background-color: #FFFFFF;
+  border-top: 1px solid #F1F5F9;
+  padding: 16px 24px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-nav-item {
+  width: 100%;
+}
+
+.mobile-nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #334155;
+  display: block;
+}
+
+.logout-mobile-button {
+  background-color: #0284C7;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-hamburger-button {
+    display: none;
+  }
+
+  .mobile-nav-drawer {
+    display: none;
+  }
+
+  .desktop-nav-menu {
+    display: flex;
+  }
+}

@@ -1,0 +1,131 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.login-responsive-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.login-image-desktop {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 24px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-logo-container {
+  margin-bottom: 24px;
+}
+
+.login-website-logo {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.input-field {
+  height: 44px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #0F172A;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background-color: #F8FAFC;
+}
+
+.input-field:focus {
+  border-color: #0284C7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+  background-color: #FFFFFF;
+}
+
+.login-button {
+  height: 44px;
+  background-color: #0284C7;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.login-button:hover {
+  background-color: #0369A1;
+}
+
+.login-button:active {
+  transform: scale(0.99);
+}
+
+.error-message {
+  font-size: 12px;
+  color: #EF4444;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .login-responsive-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .login-image-desktop {
+    width: 50%;
+    max-width: 550px;
+    margin-bottom: 0;
+  }
+
+  .login-form-container {
+    width: 42%;
+    max-width: 440px;
+    padding: 40px 32px;
+  }
+}
